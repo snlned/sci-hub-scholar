@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Sci-Hub Scholar",
+  "version": "1.0.2",
+ 
+  "description": "Append a Sci-Hub direct link into Google Scholar searchs.",
+  "homepage_url": "https://github.com/snlned/sci-hub-scholar",
+  "icons": {
+  "48": "icon-48.png",
+  "96": "icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["sci-hub_append.js"]
+    }
+  ]
+
+}
